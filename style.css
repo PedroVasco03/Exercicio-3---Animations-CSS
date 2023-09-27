@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    width: 40vw;
+    height: 50%;
+    animation-name: vaiCima;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    border-radius: 0;
+    align-items: center;
+    background-color: blue;
+    animation-direction: alternate;
+}
+
+.content2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40vw;
+    height: 50%;
+    animation-name: vaiDireita;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 0;
+    align-items: center;
+    background-color: red;
+    animation-direction: alternate;
+}
+
+@keyframes vaiCima{
+    25%{
+        background-color: brown;
+    }
+    50%{
+        background-color: chartreuse;
+    }
+    75%{
+        background-color: darkslategray;
+
+    }
+    100%{
+        background-color: gold;
+    }
+    from{margin-bottom: 0px;}
+    to{margin-bottom: 40%;}
+}
+
+@keyframes vaiDireita{
+    25%{
+        background-color: rgb(165, 138, 42);
+    }
+    50%{
+        background-color: rgb(0, 157, 255);
+    }
+    75%{
+        background-color: rgb(255, 0, 212);
+
+    }
+    100%{
+        background-color: rgb(43, 255, 0);
+    }
+    from{margin-right: 0px;}
+    to{margin-right: 90%; }
+}
